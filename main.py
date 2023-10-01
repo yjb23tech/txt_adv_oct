@@ -1,4 +1,4 @@
-from classes import Player
+from classes import Player, Weapon, BattleAxe 
 from functions import str_player_name, int_player_age, str_player_location, str_player_selection 
 from data_strucs import arr_player_options 
 
@@ -10,6 +10,8 @@ def play():
     print(" ")
     print(test_player)
     print(" ")
+
+    test_player_weapon = BattleAxe()
 
     while(bool_game_is_on == True):
 
@@ -33,6 +35,7 @@ def play():
             print("You're now travelling West")
         elif test_player.str_player_selection in ['Inventory', 'inventory', 'I', 'i']:
             print("You have access to the following items in your Inventory:\n")
+            print(test_player_weapon)
         elif test_player.str_player_selection in ['Quit', 'quit', 'Q', 'q']:
             ui_confirm_quit = input("You have chosen to Quit the game; please type in Q-U-I-T to confirm:\n")
             if ui_confirm_quit == 'QUIT':
