@@ -10,3 +10,7 @@ def str_player_location():
     player_location = input("And where are you from Sailor?\n")
     return player_location
 
+def str_player_selection():
+    player_selection = input("What would you like to do Sailor? Choose from one of the options shown:\n")
+    return player_selection 
+
