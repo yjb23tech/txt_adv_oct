@@ -50,6 +50,15 @@ for x in range(len(arr_greed_island_grid)):
         print(arr_greed_island_grid[x][y])
     print(" ")
 
+try: 
+    arr_greed_island_grid[2][3]
+except IndexError:
+    print("You're heading for uncharted waters Sailor; you will be returned back to your last known location")
+
+
+
+
+
 
 
 
