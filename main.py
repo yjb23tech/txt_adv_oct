@@ -6,15 +6,10 @@ def play():
 
     bool_game_is_on = True 
 
-    test_player = Player("Joshua", 29, "LunDun")
+    test_player = Player(str_player_name(), int_player_age(), str_player_location())
     print(" ")
     print(test_player)
     print(" ")
-
-    test_player_2 = Player(str_player_name(), int_player_age(), str_player_location())
-
-    print(" ")
-    print(test_player_2)
 
     while(bool_game_is_on == True):
 
@@ -25,10 +20,8 @@ def play():
         print(" ")
 
         test_player.str_player_selection = str_player_selection()
-        test_player_2.str_player_selection = str_player_selection()
 
         print(f"{test_player.str_name} has chosen option {test_player.str_player_selection}")
-        print(f"{test_player_2.str_name} has chosen option {test_player_2.str_player_selection}")
 
         if test_player.str_player_selection in ['North', 'north', 'NORTH', 'N', 'n', '^']:
             print("You're now travelling Norte")
