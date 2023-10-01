@@ -44,6 +44,12 @@ for x in range(3):
         print(arr_greed_island_grid[x][y])
     print(" ")
 
+#Probably the most important code I've ever written (3)
+for x in range(len(arr_greed_island_grid)):
+    for y in range(len(arr_greed_island_grid)):
+        print(arr_greed_island_grid[x][y])
+    print(" ")
+
 
 
 
